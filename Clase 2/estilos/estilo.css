@@ -1,0 +1,32 @@
+h3 {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: bisque;
+  font-size: 25px;
+}
+
+label {
+  background-color: orangered;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+label,
+input {
+  border: 1px solid black;
+}
+
+div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  margin-right: 200px;
+  margin-left: 200px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  border-top-width: 20px;
+  border-bottom-width: 20px;
+}

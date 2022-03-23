@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Afiliado</title>
+    <style>
+        h3 {
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: bisque;
+            font-size: 25px;
+        }
+
+        label {
+            background-color: orangered;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        label,
+        input {
+            border: 1px solid black;
+        }
+        
+
+
+        div {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 30px;
+            margin-right: 200px;
+            margin-left: 200px;
+            border-left-width: 20px;
+            border-right-width: 20px;
+            border-top-width: 20px;
+            border-bottom-width: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color: brown;">
+    <div style=" background-color: black; ">
+        <h3><i> Datos del afiliado/a</i></h3>
+
+        <form style="background-color: brown; padding-bottom: 20px;" action="/" method="post">
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" name="nombre" placeholder="Escribir nombre">
+            <br>
+            <label for="apellido">Apellidos</label>
+            <br>
+            <input type="text" name="apellido" placeholder="Escribir apellido">
+            <br>
+            <br>
+
+            <label for="tipoDocumento">Tipo de documento:</label>
+            <br>
+            <select name="tipoDocumento" id="tipoDocumento">
+                <option value="">Seleccione...</option>
+                <option value="1">DNI</option>
+                <option value="2">CI</option>
+                <option value="3">LC</option>
+                <option value="4">LE</option>
+            </select>
+            <br>
+            <label for="numeroDocumento">Número de Documento</label>
+            <br>
+            <input type="text" id="numeroDocumento" placeholder="Ingrese numeros" pattern="[0-9]{8}">
+            <br>
+            <br>
+
+            <label for="genero">Seleccione Genero:</label>
+            <br>
+            <input type="radio" name="genero" id="genero" value="1"> Varón<BR>
+            <input type="radio" name="genero" id="genero" value="2"> Mujer<br>
+            <input type="radio" name="genero" id="genero" value="3" checked> Otro
+            <br>
+            <textarea style="resize: none;" name="otro" id="otro" cols="10" rows="1"
+                placeholder="Justifique su seleccion"></textarea>
+            <br>
+            <br>
+
+            <label for="tipoAfiliado">Tipo de afiliado:</label>
+            <br>
+            <input type="checkbox" name="tipoAfiliado" id="tipoAfiliado" checked> Afiliado activo<br>
+            <input type="checkbox" name="tipoAfiliado" id="tipoAfiliado"> Afiliado pasivo
+            <br>
+            <br>
+
+            <label for="fechaNacimiento"> Fecha de Nacimiento:</label>
+            <br>
+            <input type="date" name="fechaNacimiento" id="fechaNacimiento" min="1920-01-01" max="2022-03-23">
+            <br>
+            <br>
+
+            <label for="email">Ingrese su direccion email</label>
+            <br>
+            <input type="text" id="email" placeholder="Ingrese su correo">
+            <br>
+            <br>
+            <label for="nombreUsuario">Ingrese un nombre de usuario:</label>
+            <br>
+            <input type="text" id="nombreUsuario" placeholder="Nombre de usuario">
+            <br>
+
+            <label for="password">Ingrese una contraseña</label>
+            <br>
+            <input type="password" id="password" placeholder="Ingrese una contraseña">
+            <br>
+            <label for="password">Confirme su contraseña</label>
+            <br>
+            <input type="password" id="password" placeholder="Confirme su contraseña">
+            <br>
+            <br>
+
+            <button type="submit">Registrarse</button>
+            <button type="reset">Cancelar</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
