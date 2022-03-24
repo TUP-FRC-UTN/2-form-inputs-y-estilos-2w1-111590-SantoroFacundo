@@ -1,0 +1,32 @@
+h1 {
+  font-size: large;
+  border: 1px solid red;
+  
+}
+label {
+  font-size: medium;
+}
+#formulario {
+  padding-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 20px;
+}
+h1,
+label {
+  background-color: chartreuse;
+}
+body {
+  background-color: black;
+}
+body form {
+  background-color: white;
+}
+body label {
+  color: black;
+}
+
+.contenedor {
+  text-align: center;
+  
+}

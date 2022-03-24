@@ -3,40 +3,52 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/estilos/estilo.css">
+    <link rel="stylesheet" href="/Clase 2/estilos/estilo1.css">
     <title>Clase 2 Programacion 3</title>
 </head>
 
 <body>
-    <div>
-        <form action="/" method="post">
-            Nombre: <br>
-            <input type="text" placeholder="Ingrese Nombre"> <br>
-            Apellido: <br>
+    <div class="contenedor">
+        <h1>Clase 2: Estilos</h1>
+        <br>
+        <form id="formulario" action="/" method="post">
+
+            <h1>Datos Personales</h1>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input type="text" placeholder="Ingrese Nombre">
+            <br>
+            <label for="apellido"> Apellido:</label>
+            <br>
             <input type="text" placeholder="Ingrese Apellido">
             <br>
             <br>
-
-            Seleccione Genero: <br>
+            
+            <label for="genero"> Seleccione Genero: </label>
+            <br>
             <input type="radio" name="genero" id="genero" value="1"> Varón<BR>
             <input type="radio" name="genero" id="genero" value="2"> Mujer<br>
             <input type="radio" name="genero" id="genero" value="3" checked> Prefiero no contestar
             <br>
             <br>
 
-            intereses: <br>
+            <label for="intereses"> Intereses: </label>
+            <br>
             <input type="checkbox" name="intereses" id="intereses" checked>Deportes <br>
             <input type="checkbox" name="intereses" id="intereses">Peliculas <br>
             <input type="checkbox" name="intereses" id="intereses">Series
             <br>
             <br>
 
-            Fecha de Nacimiento: <br>
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <br>
             <input type="date" name="fechaNacimiento" id="fechaNacimiento" min="2022-03-23" max="2022-03-25">
             <br>
             <br>
 
-            Seleccionar Provincia: <br>
+            <label for="provincia"> Seleccionar Provincia:</label>
+            <br>
             <select name="provincias" id="provincias">
                 <option value="">Seleccione...</option>
                 <option value="1">Córdoba</option>
@@ -45,13 +57,15 @@
             <br>
             <br>
 
-            Ingrese su comentario: <br>
+            <label for="comentario"> Ingrese su comentario:</label>
+            <br>
             <textarea style="resize: none;" name="comentario" id="comentario" cols="30" rows="10"
                 placeholder="Ingrese su comentario aqui"></textarea>
             <br>
             <br>
 
-            Ingrese su numero: <br>
+            <label for="numero"> Ingrese su numero:</label>
+            <br>
             <input type="number" name="numero" id="numero" min="10" max="100">
             <br>
             <br>
